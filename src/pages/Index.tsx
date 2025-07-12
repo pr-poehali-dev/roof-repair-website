@@ -20,7 +20,7 @@ const Index = () => {
             <div className="flex items-center space-x-2">
               <Icon name="Home" size={24} className="text-blue-600" />
               <span className="text-xl font-bold text-gray-900">
-                КровельСервис
+                РемонтКровли
               </span>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -60,16 +60,17 @@ const Index = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="container mx-auto px-4 text-center">
-          <Badge className="mb-6 bg-blue-100 text-blue-700 hover:bg-blue-100">
-            Профессиональные кровельные работы
+          <Badge className="mb-6 bg-red-100 text-red-700 hover:bg-red-100">
+            Экстренный ремонт кровли 24/7
           </Badge>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Надёжный ремонт
-            <br />и монтаж кровли
+            Ремонт кровли
+            <br />
+            любой сложности
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Устраняем протечки, монтируем снегозадержатели и водосточные
-            системы. Работаем с любыми видами кровли. Гарантия на все работы.
+            Устраняем протечки, восстанавливаем покрытие, меняем поврежденные
+            элементы. Быстро, качественно, с гарантией до 5 лет.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -96,23 +97,28 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Наши услуги
+              Виды ремонтных работ
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Выполняем полный спектр кровельных работ любой сложности
+              Выполняем все виды ремонта кровли от устранения протечек до полной
+              замены покрытия
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="border border-gray-100 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Shield" size={24} className="text-blue-600" />
+                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon
+                    name="AlertTriangle"
+                    size={24}
+                    className="text-red-600"
+                  />
                 </div>
-                <CardTitle className="text-xl">Снегозадержатели</CardTitle>
+                <CardTitle className="text-xl">Аварийный ремонт</CardTitle>
                 <CardDescription>
-                  Монтаж и ремонт снегозадержателей на металлочерепице,
-                  профнастиле, фальце
+                  Экстренное устранение повреждений после ураганов, града,
+                  падения деревьев. Работаем круглосуточно.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -124,55 +130,64 @@ const Index = () => {
                 </div>
                 <CardTitle className="text-xl">Устранение протечек</CardTitle>
                 <CardDescription>
-                  Быстрое устранение точечных протечек кровли любой сложности
+                  Быстрый поиск и герметизация мест протечки. Работаем в любую
+                  погоду, даже во время дождя.
                 </CardDescription>
               </CardHeader>
             </Card>
 
             <Card className="border border-gray-100 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Wind" size={24} className="text-blue-600" />
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon
+                    name="RotateCcw"
+                    size={24}
+                    className="text-orange-600"
+                  />
                 </div>
-                <CardTitle className="text-xl">Вентиляция</CardTitle>
+                <CardTitle className="text-xl">Замена покрытия</CardTitle>
                 <CardDescription>
-                  Монтаж и ремонт вентиляционных проходных элементов и труб
+                  Частичная или полная замена кровельного материала с
+                  сохранением стропильной системы.
                 </CardDescription>
               </CardHeader>
             </Card>
 
             <Card className="border border-gray-100 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Settings" size={24} className="text-blue-600" />
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Shield" size={24} className="text-green-600" />
                 </div>
-                <CardTitle className="text-xl">Доборные элементы</CardTitle>
+                <CardTitle className="text-xl">Гидроизоляция</CardTitle>
                 <CardDescription>
-                  Монтаж доборных кровельных элементов для защиты и эстетики
+                  Восстановление и усиление гидроизоляционного слоя современными
+                  материалами.
                 </CardDescription>
               </CardHeader>
             </Card>
 
             <Card className="border border-gray-100 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Zap" size={24} className="text-blue-600" />
+                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Zap" size={24} className="text-purple-600" />
                 </div>
-                <CardTitle className="text-xl">Водосточные системы</CardTitle>
+                <CardTitle className="text-xl">Ремонт водостоков</CardTitle>
                 <CardDescription>
-                  Монтаж и ремонт водосточных систем для отвода дождевой воды
+                  Прочистка, ремонт и замена элементов водосточной системы.
+                  Устранение засоров.
                 </CardDescription>
               </CardHeader>
             </Card>
 
             <Card className="border border-gray-100 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Wrench" size={24} className="text-blue-600" />
+                <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Wrench" size={24} className="text-yellow-600" />
                 </div>
-                <CardTitle className="text-xl">Ремонт примыканий</CardTitle>
+                <CardTitle className="text-xl">Ремонт стропил</CardTitle>
                 <CardDescription>
-                  Ремонт протечек примыкания труб на всех видах кровли
+                  Укрепление и замена поврежденных элементов стропильной
+                  конструкции. Восстановление несущей способности.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -185,10 +200,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Фото наших работ
+              Примеры ремонта
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Примеры выполненных проектов за последние месяцы
+              Фотографии до и после ремонта различных типов кровель
             </p>
           </div>
 
@@ -201,10 +216,10 @@ const Index = () => {
               />
               <CardContent className="p-4">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  Монтаж снегозадержателей
+                  Ремонт после шторма
                 </h3>
                 <p className="text-sm text-gray-600">
-                  Установка снегозадержателей на металлочерепице частного дома
+                  Восстановление кровли после повреждения градом
                 </p>
               </CardContent>
             </Card>
@@ -233,10 +248,10 @@ const Index = () => {
               />
               <CardContent className="p-4">
                 <h3 className="font-semibold text-gray-900 mb-2">
-                  Водосточная система
+                  Ремонт водосточной системы
                 </h3>
                 <p className="text-sm text-gray-600">
-                  Монтаж современной водосточной системы
+                  Восстановление поврежденной водосточной системы
                 </p>
               </CardContent>
             </Card>
@@ -251,10 +266,10 @@ const Index = () => {
                 </div>
                 <CardContent className="p-4">
                   <h3 className="font-semibold text-gray-900 mb-2">
-                    Проект #{item}
+                    Ремонт #{item}
                   </h3>
                   <p className="text-sm text-gray-600">
-                    Описание выполненных работ
+                    Описание выполненного ремонта
                   </p>
                 </CardContent>
               </Card>
@@ -263,85 +278,120 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Reviews Section */}
-      <section id="reviews" className="py-20">
+      {/* Why Choose Us Section */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Отзывы клиентов
+              Почему выбирают нас
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Что говорят о нашей работе
+              Наши преимущества в области кровельного ремонта
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
-              <Card key={item} className="border border-gray-100">
-                <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Icon
-                        key={star}
-                        name="Star"
-                        size={16}
-                        className="text-yellow-400 fill-current"
-                      />
-                    ))}
-                  </div>
-                  <p className="text-gray-600 mb-4">
-                    "Отличная работа! Быстро устранили протечку, качественно
-                    установили снегозадержатели. Рекомендую!"
-                  </p>
-                  <div className="flex items-center">
-                    <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mr-3">
-                      <Icon name="User" size={20} className="text-gray-500" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">
-                        Клиент #{item}
-                      </p>
-                      <p className="text-sm text-gray-500">г. Москва</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Clock" size={32} className="text-red-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Срочно</h3>
+              <p className="text-gray-600">
+                Выезд в день обращения, аварийный ремонт 24/7
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Award" size={32} className="text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Качественно</h3>
+              <p className="text-gray-600">
+                Используем проверенные материалы и технологии
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Shield" size={32} className="text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Гарантия</h3>
+              <p className="text-gray-600">
+                Письменная гарантия на все виды работ до 5 лет
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon
+                  name="TrendingDown"
+                  size={32}
+                  className="text-orange-600"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Выгодно</h3>
+              <p className="text-gray-600">Честные цены без скрытых доплат</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-blue-600 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Готовы начать?</h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Свяжитесь с нами для бесплатной консультации и расчёта стоимости
-            работ
-          </p>
+      <section id="contact" className="py-20 bg-slate-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-8">
+              Нужен срочный ремонт кровли?
+            </h2>
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Оставьте заявку или позвоните нам. Выезд мастера и диагностика —
+              бесплатно!
+            </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-            <div className="flex items-center">
-              <Icon name="Phone" size={20} className="mr-2" />
-              <span className="text-lg">+7 (999) 123-45-67</span>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Phone" size={24} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Телефон</h3>
+                <p className="text-red-400 text-lg">+7 (999) 123-45-67</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Clock" size={24} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Режим работы</h3>
+                <p className="text-gray-300">Круглосуточно</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Icon name="MapPin" size={24} className="text-white" />
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Район работы</h3>
+                <p className="text-gray-300">Москва и Московская область</p>
+              </div>
             </div>
-            <div className="flex items-center">
-              <Icon name="Mail" size={20} className="mr-2" />
-              <span className="text-lg">info@roofservice.ru</span>
-            </div>
-            <div className="flex items-center">
-              <Icon name="MapPin" size={20} className="mr-2" />
-              <span className="text-lg">Москва и область</span>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-red-600 hover:bg-red-700 text-lg px-8 py-4"
+              >
+                <Icon name="Phone" size={20} className="mr-2" />
+                Экстренный вызов
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-slate-900"
+              >
+                <Icon name="MessageSquare" size={20} className="mr-2" />
+                Написать в WhatsApp
+              </Button>
             </div>
           </div>
-
-          <Button
-            size="lg"
-            className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3"
-          >
-            <Icon name="Phone" size={20} className="mr-2" />
-            Заказать звонок
-          </Button>
         </div>
       </section>
 
@@ -351,10 +401,10 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Icon name="Home" size={24} className="text-blue-400" />
-              <span className="text-xl font-bold">КровельСервис</span>
+              <span className="text-xl font-bold">РемонтКровли</span>
             </div>
             <p className="text-gray-400 text-center md:text-right">
-              © 2024 КровельСервис. Все права защищены.
+              © 2024 РемонтКровли. Все права защищены.
             </p>
           </div>
         </div>
